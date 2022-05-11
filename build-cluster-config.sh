@@ -35,5 +35,5 @@ sed -i "s/clusters\/default/clusters\/$CLUSTER_NAME/g" bootstrap/$CLUSTER_NAME/a
 
 # Regenerate RH SSO Sealed Secret
 RH_SSO_OVERLAY=apps/06-rhsso/overlays/$CLUSTER_NAME
-kustomize build $RH_SSO_OVERLAY/config > $RH_SSO_OVERLAY/config/rhsso-config.yaml
+oc kustomize build $RH_SSO_OVERLAY/config > $RH_SSO_OVERLAY/config/rhsso-config.yaml
 kubeseal --cert ~/.bitnami/tls.crt --format yaml < $RH_SSO_OVERLAY/config/rhsso-config.yaml > $RH_SSO_OVERLAY/01-sealed-rhsso-config.yaml
