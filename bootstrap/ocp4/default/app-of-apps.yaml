@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: clusters/default
-    repoURL: https://github.com/adetalhouet/ocp-gitops.git
+    repoURL: https://github.com/mabehiro/ocp-gitops.git
     targetRevision: main
   syncPolicy:
     automated:
