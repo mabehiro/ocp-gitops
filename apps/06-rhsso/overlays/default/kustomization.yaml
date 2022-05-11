@@ -15,11 +15,11 @@ patches:
    patch: |-
     - op: replace
       path: /spec/href
-      value: 'https://keycloak-openshift-sso.apps.hub-adetalhouet.rhtelco.io/auth/'
+      value: 'https://keycloak-openshift-sso.apps.ocp4.mabe.com/auth/'
 -  target:
      kind: Job
      name: keycloak-migration
    patch: |-
     - op: replace
       path:  /spec/template/spec/containers/0/env/0/value
-      value: 'https://keycloak-openshift-sso.apps.hub-adetalhouet.rhtelco.io/auth/'
+      value: 'https://keycloak-openshift-sso.apps.ocp4.mabe.com/auth/'
