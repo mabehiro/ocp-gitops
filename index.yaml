@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  ocp-gitops:
+  - apiVersion: v2
+    created: "2022-05-11T15:48:22.423287584-05:00"
+    description: Mabehiro clusters config
+    digest: 93996f6452e8391c32ad6f23b3c2e545dc62b945e76f77a110423481a0168926
+    name: ocp-gitops
+    urls:
+    - https://github.com/mabehiro/ocp-gitops/releases/download/ocp-gitops-1.0.0/ocp-gitops-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-05-11T15:48:22.42330612-05:00"
