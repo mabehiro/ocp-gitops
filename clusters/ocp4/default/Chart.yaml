@@ -1,10 +1,10 @@
 apiVersion: v2
-description: Alexis de Talhouët clusters config
-name: default-cluster
+description: mabehiro clusters config
+name: ocp4
 version: 1.0.0
 
 dependencies:
   - name: ocp-gitops
     version: 1.0.0
-    repository: https://adetalhouet.github.io/ocp-gitops/
+    repository: https://github.com/mabehiro/ocp-gitops/
     # repository: file://../../helm
