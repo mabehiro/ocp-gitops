@@ -9,11 +9,11 @@ applications:
   02-sealed-secrets:
     enabled: true
   03-letsencrypt-certs:
-    enabled: false
+    enabled: true
   04-local-storage-operator:
-    enabled: false
+    enabled: true
   05-openshift-container-storage:
-    enabled: false
+    enabled: true
   06-rhsso:
     enabled: true
     overlays: true
@@ -21,22 +21,22 @@ applications:
     enabled: true
     overlays: true
   08-openshift-elasticsearch:
-    enabled: false
+    enabled: true
   09-openshift-logging:
-    enabled: false
+    enabled: true
   10-ansible-automation-platform:
-    enabled: false
-    overlays: false
+    enabled: true
+    overlays: true
   11-quay-container-security:
-    enabled: false
+    enabled: true
   12-advanced-cluster-management:
-    enabled: false
+    enabled: true
   13-advanced-cluster-management-policies:
-    enabled: false
+    enabled: true
   14-advanced-cluster-management-apps:
-    enabled: false
+    enabled: true
   15-advanced-cluster-managment-observability:
-    enabled: false
+    enabled: true
   16-acs:
     enabled: true
     overlays: true
