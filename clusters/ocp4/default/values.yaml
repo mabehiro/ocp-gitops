@@ -1,6 +1,6 @@
 ocp-gitops:
   config:
-    repoURL: https://github.com/adetalhouet/ocp-gitops.git
+    repoURL: https://github.com/mabehiro/ocp-gitops.git
     overlay: default
   applications:
     01-openshift-gitops:

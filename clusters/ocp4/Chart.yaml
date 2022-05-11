@@ -6,5 +6,5 @@ version: 1.0.0
 dependencies:
   - name: ocp-gitops
     version: 1.0.0
-    repository: https://github.com/mabehiro/ocp-gitops/
+    repository: https://mabehiro.github.io/ocp-gitops/
     # repository: file://../../helm
