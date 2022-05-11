@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: openshift-performance-addon-operator
+namePrefix:
+  pao-
+
+bases:
+ - ../../../_common/installplan-approver
+
+patchesJson6902:
+  - target:
+      kind: Job
+      name: installplan-approver
+    patch: |-
+      - op: add
+        path: "/spec/template/spec/containers/0/env"
+        value:
+            - name: SLEEP
+              value: "60"
+            - name: OPERATOR_SUB_NAME
+              value: openshift-performance-addon-operator-subscription

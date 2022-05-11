@@ -40,3 +40,12 @@ applications:
   16-acs:
     enabled: true
     overlays: true
+  21-sriov-operator:
+    enabled: true
+    overlays: true
+  22-kubernetes-nmstate-operator:
+    enabled: true
+    overlays: true
+  23-performance-addon-operator:
+    enabled: true
+    overlays: true

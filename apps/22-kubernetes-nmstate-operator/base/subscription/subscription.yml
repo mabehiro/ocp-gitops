@@ -1,0 +1,23 @@
+---
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: nmstate-operatorgroup
+  namespace: openshift-nmstate
+spec:
+  targetNamespaces:
+    - openshift-nmstate
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: nmstate-operator
+  namespace: openshift-nmstate
+  annotations:
+    olm.operatorGroup: nmstate-operatorgroup
+spec:
+  channel: "4.8"
+  installPlanApproval: "Manual"
+  source: "redhat-operators" 
+  sourceNamespace: "openshift-marketplace"
+  name: "kubernetes-nmstate-operator"
