@@ -1,4 +1,0 @@
-apiVersion: v2
-description: Mabehiro clusters config
-name: ocp-gitops
-version: 1.0.0
