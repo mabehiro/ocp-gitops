@@ -14,5 +14,5 @@ spec:
   channel: "4.9" 
   installPlanApproval: "Manual"
   name: performance-addon-operator
-  source: telco-cloud-redhat-operator-catalog
+  source: redhat-operator-catalog
   sourceNamespace: openshift-marketplace
