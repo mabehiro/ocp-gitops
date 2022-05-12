@@ -37,3 +37,12 @@ ocp-gitops:
     16-acs:
       enabled: false
       overlays: false
+    21-sriov-operator:
+      enabled: true
+      overlays: true
+    22-kubernetes-nmstate-operator:
+      enabled: true
+      overlays: true
+    23-performance-addon-operator:
+      enabled: true
+      overlays: true
