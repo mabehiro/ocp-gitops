@@ -41,8 +41,8 @@ ocp-gitops:
       enabled: true
       overlays: true
     22-kubernetes-nmstate-operator:
-      enabled: true
-      overlays: true
+      enabled: false
+      overlays: false
     23-performance-addon-operator:
       enabled: true
       overlays: true
