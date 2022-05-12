@@ -16,7 +16,7 @@ metadata:
   annotations:
     olm.operatorGroup: nmstate-operatorgroup
 spec:
-  channel: "4.8"
+  channel: "4.9"
   installPlanApproval: "Manual"
   source: "redhat-operators" 
   sourceNamespace: "openshift-marketplace"
