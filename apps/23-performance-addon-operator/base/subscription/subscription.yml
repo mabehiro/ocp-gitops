@@ -14,5 +14,5 @@ spec:
   channel: "4.9" 
   installPlanApproval: "Manual"
   name: performance-addon-operator
-  source: redhat-operator
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
